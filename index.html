@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Interactive Web Page 🚀</h1>
+
+  <!-- Light/Dark Mode Toggle -->
+  <button id="toggleTheme">Toggle Light/Dark Mode</button>
+
+  <!-- Counter Game -->
+  <h2>Click Counter</h2>
+  <button id="counterBtn">Click Me!</button>
+  <p>Clicks: <span id="count">0</span></p>
+
+  <!-- FAQ Section -->
+  <h2>FAQ</h2>
+  <div class="faq">
+    <button class="faq-question">What is JavaScript?</button>
+    <div class="faq-answer">JavaScript makes websites interactive.</div>
+  </div>
+  <div class="faq">
+    <button class="faq-question">What is DOM?</button>
+    <div class="faq-answer">DOM = Document Object Model, a tree of your page.</div>
+  </div>
+
+  <!-- Form Validation -->
+  <h2>Sign Up Form</h2>
+  <form id="signupForm">
+    <label>
+      Name: <input type="text" id="name">
+      <span class="error" id="nameError"></span>
+    </label><br><br>
+
+    <label>
+      Email: <input type="text" id="email">
+      <span class="error" id="emailError"></span>
+    </label><br><br>
+
+    <label>
+      Password: <input type="password" id="password">
+      <span class="error" id="passwordError"></span>
+    </label><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
